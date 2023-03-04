@@ -1,17 +1,17 @@
 {
   "fileName": "SdsSwerveLib.json",
   "name": "swerve-lib",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "uuid": "9619F7EA-7F96-4236-9D94-02338DFED592",
   "mavenUrls": [
     "https://jitpack.io"
   ],
-  "jsonUrl": "https://raw.githubusercontent.com/SwerveDriveSpecialties/swerve-lib/master/SdsSwerveLib.json",
+  "jsonUrl": "https://raw.githubusercontent.com/bsafigan/swerve-lib/bugfix/bad_read/SdsSwerveLib.json",
   "javaDependencies": [
     {
-      "groupId": "com.github.SwerveDriveSpecialties",
+      "groupId": "com.github.bsafigan",
       "artifactId": "swerve-lib",
-      "version": "1.1.0"
+      "version": "1.1.1"
     }
   ],
   "jniDependencies": [],
