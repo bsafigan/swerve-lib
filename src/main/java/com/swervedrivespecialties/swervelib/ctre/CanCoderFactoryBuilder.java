@@ -47,6 +47,14 @@ public class CanCoderFactoryBuilder {
         @Override
         public double getAbsoluteAngle() {
             double angle = Math.toRadians(encoder.getAbsolutePosition());
+ 
+            ErrorCode code = encoder.getLastError();           
+            count = 0;
+            while (!ErrorCode.OK && count++ < 3) {
+                angle = Math.toRadians(encoder.getAbsolutePosition());
+                code = encoder.getLastError();
+            }
+            
             angle %= 2.0 * Math.PI;
             if (angle < 0.0) {
                 angle += 2.0 * Math.PI;
